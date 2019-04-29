@@ -1,0 +1,31 @@
+
+<div class="card">
+  <div class="card-header">
+   <h2> The Super Gossip Project For Real BITCHEEEEEES </h2>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+   <!--  <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    <%= link_to "go to team page",  gossip_team_path  %>  </br>
+    <%= link_to "go to contact page",  gossip_contact_path  %>
+
+
+</br></br></br>
+    <h1>SALUT LES LOULOUS ! </h1>
+ <p>   
+
+ <% @gossip.each do |g| %>
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+  	
+    <%= "gossip de   #{g.user.first_name} #{g.user.last_name}" %>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><%= link_to "#{g.title}", gossip_truc_path(g.id) %></li>
+
+  </ul>
+</div>
+ <% end %>
+
+ </p>
