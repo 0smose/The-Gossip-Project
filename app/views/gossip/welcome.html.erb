@@ -1,13 +1,11 @@
 <div class="card">
   <div class="card-header">
    <h2> The Super Gossip Project For Real BITCHEEEEEES </h2>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-   <!--  <a href="#" class="btn btn-primary">Go somewhere</a> -->
-    <%= link_to "go to team page",  gossip_team_path  %>  </br>
-    <%= link_to "go to contact page",  gossip_contact_path  %>
-  </div>
+ </div>
+ <div class="card-body">
+  <h3 class="card-title"><%="Bonjour #{params[:first_name]}" %></h3>  
+  <%= link_to "go to team page",  gossip_team_path  %>  </br>
+  <%= link_to "go to contact page",  gossip_contact_path  %>
 </div>
-<h1><%="Bonjour #{params[:first_name]}" %></h1>
+</div>
+<h1></h1>
