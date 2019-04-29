@@ -1,8 +1,24 @@
 
-
+<body>
 <h3>Bienvenue sur la page de <%=" #{@user_precis.first_name} #{@user_precis.last_name}" %></h3>
 
 <%= "Âge : #{@user_precis.age} ans" %> </br>
 <%= "Ville : #{@user_precis.city.name}" %></br>
 <%= @user_precis.description %></br>
-<%= "Profil créé le #{@user_precis.created_at}" %>
+<%= "Profil créé le #{@user_precis.created_at}" %> </br>
+</body>
+
+</br></br>
+  </div>
+</div>
+
+<div class="card" style="width: 11rem;">
+
+  
+  	<h6 class="card-title"><%= link_to "go to contact page", gossip_contact_path  %></h6>
+    <h6 class="card-title"><%= link_to "go to team page", gossip_team_path  %></h6>
+    <h6 class="card-title"><%= link_to "go to index page", root_path%></h6>
+    
+   
+  </div>
+</div>
