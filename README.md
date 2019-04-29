@@ -1,24 +1,21 @@
-# README
+Group : Carolina Ferreira Garcia, Robin d'Ercole et Lahouari Belabbes 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+The Gossip Project
 
-* Ruby version
+Pour lancer le projet, veuillez :
 
-* System dependencies
+    bundle install
+    rails db:create
+    rails db:migrate
+    rails db:seed
+    rails server
+    Vous pouvez ensuite aller sur http://localhost:3000/
 
-* Configuration
+Page Welcome
 
-* Database creation
+Pour la page welcome, il vous suffit d'entrer directement son URL avec votre nom. Par exemple, si vous voulez tester pour un utilisateur qui s'appelle Pierrot :
 
-* Database initialization
+http://localhost:3000/welcome/Pierrot
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Bonne journée ! 
